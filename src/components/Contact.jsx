@@ -13,15 +13,16 @@ const Contact = () => {
                 alt='/' 
                 className='w-full md:h-full object-cover p-2 max-h-[500px] h-[200px]'/>
                
-                <form action="https://formsubmit.co/ce0430cdd174ffcea92cccea3a9319e2" method="POST">
+                <form action="https://formsubmit.co/floww.paints@gmail.com" method="POST">
                     <div className='grid grid-cols-2'>
-                        <input className='border m-2 p-2' type='text' name='First' placeholder='First'/>
-                        <input className='border m-2 p-2' type='text' name='Last' placeholder='Last'/>
-                        <input className='border m-2 p-2' type='email' name='Email' placeholder='Email'/>
-                        <input className='border m-2 p-2' type='tel' name='Phone' placeholder='Phone'/>
+                        <input className='border m-2 p-2' type='text' name='First' placeholder='First' required/>
+                        <input className='border m-2 p-2' type='text' name='Last' placeholder='Last' required/>
+                        <input className='border m-2 p-2' type='email' name='Email' placeholder='Email' required/>
+                        <input className='border m-2 p-2' type='tel' name='Phone' placeholder='Phone' required/>
                         <input className='border col-span-2 p-2 m-2' type='text' name='Address' placeholder='Address'/>
-                        <textarea className='border col-span-2 m-2 p-2' name='Project&nbsp;details' cols='30' row='10' placeholder='Project Details'></textarea>
-                        <button className='col-span-2 m-2 bg-gradient-to-r from-indigo-600 via-violet-700 to-indigo-600 rounded-lg'>Submit</button>
+                        <textarea className='border col-span-2 m-2 p-2' name='Project&nbsp;details' cols='30' row='10' placeholder='Project Details' required></textarea>
+                        <button className='col-span-2 m-2 bg-gradient-to-r from-indigo-600 via-violet-700 to-indigo-600 rounded-sm'>Submit</button>
+                        <a className='p-2 text-gray-700 font-normal text-xs font-sans'>Powered by FormSubmit</a>
 
                     </div>
                 </form>

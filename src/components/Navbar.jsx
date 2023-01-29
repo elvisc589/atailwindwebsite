@@ -15,7 +15,7 @@ const Navbar = () => {
     }
     return (
     <div className='w-full min-h-[50px] flex justify-between items-center absolute z-10 text-white bg-gray-700/80'>
-        <ul className='hidden sm:flex px-4'>
+        <ul className='list-none hidden sm:flex px-4'>
             <li>
                 <a href='/'>Home</a>
 
@@ -50,7 +50,7 @@ const Navbar = () => {
         onClick={handleNav}
         className={
             nav 
-            ?'overflow-y-hidden md:hidden ease-in duration-300 absolute text-gray-300 left-0 top-0 w-full h-screen bg-black/90 px-4 py-7 flex flex-col' 
+            ?'overflow-y-hidden md:hidden ease-in duration-300 text-gray-300 fixed left-0 top-0 w-full h-[100vh] bg-black/90 px-4 py-7 flex flex-col' 
             : 'absolute top-0 h-screen left-[-100%] ease-in duration-500'}>
         <ul className='h-full w-full text-center pt-12'>
             <li className='text-2xl py-8'>
@@ -61,7 +61,7 @@ const Navbar = () => {
                 <a href='#reviews'>Reviews</a>
             </li>
             <li className='text-2xl py-8'>
-                <a href='gallery'>Gallery</a>
+                <a href='#gallery'>Gallery</a>
             </li>
             <li className='text-2xl py-8'>
                 <a href='#about'>About</a>
